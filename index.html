@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Data Entry</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        form { width: 300px; margin: auto; padding: 20px; border: 1px solid #ccc; }
+        input { width: 100%; padding: 5px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <h2>Enter Sales Data</h2>
+    <form action="/submit" method="post">
+        Date: <input type="date" name="date" required><br>
+        Product: <input type="text" name="product_name" required><br>
+        Quantity: <input type="number" name="quantity" required><br>
+        Price: <input type="number" step="0.01" name="price" required><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
